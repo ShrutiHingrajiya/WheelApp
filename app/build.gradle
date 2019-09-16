@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "test.practical.com.androidprojectsstructuredemo"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //For Sdp & SSp Library..
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+    //For Butterknife..
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    //carousellayout
+    implementation 'com.azoft.carousellayoutmanager:carousel:1.2.4'
+
+    //For Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //For Firebase
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.2'
+
+    //For Map
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.maps:google-maps-services:0.1.20'
+    implementation 'com.google.android.gms:play-services-base:16.1.0'
+
+    //For Custom Loader
+    implementation 'com.wang.avi:library:2.1.3'
+    //For Circle Imageview
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //For Expandable View
+    implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+    //rating Bar
+    implementation 'me.zhanghai.android.materialratingbar:library:1.3.2'
+    //Lottie lib
+    implementation 'com.airbnb.android:lottie:2.7.0'
+    //viewpager
+    implementation 'com.ramotion.expandingcollection:expanding-collection:0.9.1'
+
+    //Retrofit & GSON
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+
+    //Recyclear View With Animation
+    implementation 'jp.wasabeef:recyclerview-animators:3.0.0'
+
+    //AndroidX transitions.
+    implementation 'com.andkulikov:transitionseverywhere:1.8.1'
+    //View Animation Android (Fade In,Fade Out)
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    //Tab Layout
+    implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.3'
+//    // custom time picker
+//    implementation 'com.github.florent37:singledateandtimepicker:2.1.4'
+    //Wheel Picker
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+
+    // otp view
+    implementation 'com.chaos.view:pinview:1.4.3'
+
+    // piccaso
+    implementation 'com.squareup.picasso:picasso:2.6.0-SNAPSHOT'
+
+    // tab layout
+    implementation 'com.github.iammert:AnimatedTabLayout:0.1'
+
+    //image chooser from camera and gallery
+    implementation 'com.kbeanie:image-chooser-library:1.5.8@aar'
+
+    //Grid View With Header
+    implementation 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+
+
+    //RunTime Permission Android
+    implementation 'com.github.jksiezni.permissive:permissive:0.2'
+    implementation 'com.karumi:dexter:5.0.0'
+
+    //Multi Dexing
+    implementation 'com.android.support:multidex:1.0.3'
+
+}

@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/gilroyregular</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="DialogAnimationfrombootom">
+        <item name="android:fontFamily">@font/alcubierre</item>
+        <item name="android:windowEnterAnimation">@anim/slid_up_animation</item>
+        <item name="android:windowExitAnimation">@anim/slid_down_animation</item>
+    </style>
+
+    <style name="TimePickerTheme"  parent="Theme.MaterialComponents.Light.Dialog">
+
+    </style>
+
+    <style name="AppTheme_full" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/gilroyregular</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="actionbar_menu">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:padding">@dimen/_2sdp</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/gilroyregular</item>
+    </style>
+
+
+    <style name="actionbar_search">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:padding">@dimen/_2sdp</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/gilroyregular</item>
+    </style>
+
+    <style name="actionbar_back">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/_4sdp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:rotation">180</item>
+        <item name="android:fontFamily">@font/gilroyregular</item>
+    </style>
+
+    <style name="style_actionbar_title">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/gilroyregular</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+</resources>
