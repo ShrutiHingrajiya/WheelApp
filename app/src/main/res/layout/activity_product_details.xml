@@ -169,6 +169,12 @@
                     android:layout_height="wrap_content">
 
 
+                    <Button
+                        android:layout_width="match_parent"
+                        android:background="@drawable/rounded_rect_bg"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Noe" />
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
