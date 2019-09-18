@@ -9,8 +9,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.crashlytics.android.Crashlytics;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.fabric.sdk.android.Fabric;
 import test.practical.com.androidprojectsstructuredemo.Adapter.Adapter_Dashboard_Category;
 import test.practical.com.androidprojectsstructuredemo.R;
 
@@ -28,7 +31,7 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         ButterKnife.bind(this);
-
+        Fabric.with(this, new Crashlytics());
         this.setMemoryAllocation();
         this.setListeners();
     }

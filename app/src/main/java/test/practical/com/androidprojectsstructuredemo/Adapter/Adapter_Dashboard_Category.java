@@ -1,10 +1,12 @@
 package test.practical.com.androidprojectsstructuredemo.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,6 +17,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import test.practical.com.androidprojectsstructuredemo.Activity.SpinnTheWheelActivity;
 import test.practical.com.androidprojectsstructuredemo.R;
 
 public class Adapter_Dashboard_Category extends RecyclerView.Adapter<Adapter_Dashboard_Category.FeesViewHolder> {
@@ -41,6 +44,13 @@ public class Adapter_Dashboard_Category extends RecyclerView.Adapter<Adapter_Das
 
         holder.imgCategory.setImageResource(images[position]);
 
+        holder.linearItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, SpinnTheWheelActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -55,6 +65,8 @@ public class Adapter_Dashboard_Category extends RecyclerView.Adapter<Adapter_Das
         TextView txtCategoryName;
         @BindView(R.id.txt_category_price)
         TextView txtCategoryPrice;
+        @BindView(R.id.linear_item)
+        LinearLayout linearItem;
 
         public FeesViewHolder(@NonNull View itemView) {
             super(itemView);

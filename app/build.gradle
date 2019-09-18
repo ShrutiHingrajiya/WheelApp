@@ -1,4 +1,19 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
 
 android {
     compileSdkVersion 28
@@ -115,5 +130,10 @@ dependencies {
 
     //Multi Dexing
     implementation 'com.android.support:multidex:1.0.3'
+    implementation project(path: ':library')
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    //View Pager Indicator
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
 
 }

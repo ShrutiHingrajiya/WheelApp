@@ -67,7 +67,6 @@
         <item name="android:padding">@dimen/_4sdp</item>
         <item name="android:layout_margin">@dimen/_10sdp</item>
         <item name="android:tint">@color/colorPrimary</item>
-        <item name="android:rotation">180</item>
         <item name="android:fontFamily">@font/gilroyregular</item>
     </style>
 
