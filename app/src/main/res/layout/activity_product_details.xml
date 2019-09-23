@@ -8,39 +8,37 @@
     android:orientation="vertical"
     tools:context=".Activity.ProductDetailsActivity">
 
-    <androidx.core.widget.NestedScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_dashboard_menu"
+            style="@style/actionbar_back"
+            android:onClick="onBack"
+            app:srcCompat="@drawable/ic_keyboard_backspace" />
+
+        <TextView
+            style="@style/style_actionbar_title"
+            android:layout_weight="1"
+            android:text="Product Name" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/img_dashboard_menu"
-                    style="@style/actionbar_back"
-                    app:srcCompat="@drawable/ic_keyboard_backspace" />
-
-                <TextView
-                    style="@style/style_actionbar_title"
-                    android:layout_weight="1"
-                    android:text="Product Name" />
-
-            </LinearLayout>
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:paddingHorizontal="@dimen/_10sdp"
-                android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -166,17 +164,21 @@
                     android:layout_width="match_parent"
                     android:layout_marginTop="@dimen/_14sdp"
                     android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:gravity="bottom"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_height="match_parent">
 
 
                     <Button
                         android:layout_width="match_parent"
                         android:background="@drawable/rounded_rect_bg"
+                        android:id="@+id/btn_buy_now"
                         android:layout_height="wrap_content"
-                        android:text="Buy Noe" />
+                        android:textColor="@color/white"
+                        android:text="Buy Now" />
 
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+
+    </ScrollView>
 </LinearLayout>

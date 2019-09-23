@@ -17,6 +17,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import test.practical.com.androidprojectsstructuredemo.Activity.ProductDetailsActivity;
 import test.practical.com.androidprojectsstructuredemo.Activity.SpinnTheWheelActivity;
 import test.practical.com.androidprojectsstructuredemo.R;
 
@@ -47,7 +48,7 @@ public class Adapter_Dashboard_Category extends RecyclerView.Adapter<Adapter_Das
         holder.linearItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, SpinnTheWheelActivity.class);
+                Intent intent = new Intent(context, ProductDetailsActivity.class);
                 context.startActivity(intent);
             }
         });

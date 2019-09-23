@@ -28,7 +28,7 @@
         <ImageView
             android:id="@+id/img_dashboard_search"
             style="@style/actionbar_search"
-            app:srcCompat="@drawable/ic_search" />
+            android:src="@drawable/ic_settings" />
 
     </LinearLayout>
 
