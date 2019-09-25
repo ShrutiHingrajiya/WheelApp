@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.net.ConnectivityManager;
 import android.net.Uri;
@@ -33,6 +34,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import test.practical.com.androidprojectsstructuredemo.Activity.DashboardActivity;
 import test.practical.com.androidprojectsstructuredemo.R;
 
 public class CommonUtils {
@@ -48,6 +50,18 @@ public class CommonUtils {
         View snackBarView = snackbar.getView();
         //snackBarView.setBackgroundColor(color);
         snackbar.show();
+
+    }
+
+    public static void showSnackBar(Activity  ctx ,String text) {
+
+        Snackbar s = Snackbar.make(ctx.findViewById(android.R.id.content), text, Snackbar.LENGTH_LONG);
+        View color = s.getView();
+        color.setBackgroundColor(ctx.getResources().getColor(R.color.colorPrimary));
+        TextView tv = (TextView) color.findViewById(com.google.android.material.R.id.snackbar_text);
+        tv.setTextColor(Color.WHITE);
+        tv.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        s.show();
 
     }
 
@@ -179,6 +193,8 @@ public class CommonUtils {
     }
 
 
+    public static void showSnackBar(DashboardActivity dashboardActivity, String string) {
+    }
 }
 
 

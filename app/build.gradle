@@ -135,5 +135,8 @@ dependencies {
 
     //View Pager Indicator
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+    implementation 'com.google.android.material:material:1.0.0'
 
 }
+apply plugin: 'com.google.gms.google-services'
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

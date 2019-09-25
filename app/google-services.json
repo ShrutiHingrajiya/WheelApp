@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "185511832085",
+    "firebase_url": "https://nehaelectronics-57f49.firebaseio.com",
+    "project_id": "nehaelectronics-57f49",
+    "storage_bucket": "nehaelectronics-57f49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185511832085:android:9ed001bb9083f409cabc1c",
+        "android_client_info": {
+          "package_name": "test.practical.com.androidprojectsstructuredemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185511832085-vv3o7o6visqk5tl95sf1mgk91dtd54lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "test.practical.com.androidprojectsstructuredemo",
+            "certificate_hash": "32581250a76cf453bc7153ee4b309ed0a44297da"
+          }
+        },
+        {
+          "client_id": "185511832085-91jpq377808fdtc7h5mij58u7k97vt8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5haqx7hrzj5I91JfnGC8oo1leKHNc1FI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185511832085-91jpq377808fdtc7h5mij58u7k97vt8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

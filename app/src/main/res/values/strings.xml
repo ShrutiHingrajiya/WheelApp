@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Order Discount</string>
+    <string name="app_name">Neha Electronics</string>
     <string name="Categories">Categories</string>
+    <string name="no_network_available">No Network Available!</string>
 </resources>

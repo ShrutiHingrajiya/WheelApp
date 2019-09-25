@@ -47,6 +47,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         dotsIndicator.setViewPager(viewPagerProductdetails);
         wormDotsIndicator.setViewPager(viewPagerProductdetails);
 
+
         btnBuyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,8 +56,8 @@ public class ProductDetailsActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
-
     }
+
 
     public void onBack(View view) {
         finish();
